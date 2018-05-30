@@ -1,0 +1,584 @@
+DEFAULTS                                                              PRECISIO
+BEAM                                                              -1.0PROTON
+PHOTONUC          1.                        LAITON
+PHYSICS           3.                                                  EVAPORAT
+PHYSICS           1.                                                  COALESCE
+GEOBEGIN          1.                                                  COMBNAME
+    0    0          
+RCC CylAir     0.0 0.0 -100. 0.0 0.0 1340. 40.
+RCC CylAir2    0.0 0.0 -500. 0.0 0.0 2340. 80.
+RCC Tube1int   0.0 0.0 0.0 0.0 0.0 27.3 5.1
+RCC Tube1ext   0.0 0.0 0.0 0.0 0.0 27.3 5.4
+RCC Col1int    0.0 0.0 27.3 0.0 0.0 1.2 5.1
+RCC Col1ext    0.0 0.0 27.3 0.0 0.0 1.2 6.5
+RCC epdm1int   0.0 0.0 28.5 0.0 0.0 0.4 5.5
+RCC epdm1ext   0.0 0.0 28.5 0.0 0.0 0.4 6.
+RCC alu1int    0.0 0.0 28.5 0.0 0.0 0.4 5.
+RCC alu1ext    0.0 0.0 28.5 0.0 0.0 0.4 5.5
+RCC Col2int    0.0 0.0 28.9 0.0 0.0 1.2 5.1
+RCC Col2ext    0.0 0.0 28.9 0.0 0.0 1.2 6.5
+RCC Tube2int   0.0 0.0 30.1 0.0 0.0 10.3 5.1
+RCC Tube2ext   0.0 0.0 30.1 0.0 0.0 10.3 5.4
+RCC Col2int2   0.0 0.0 40.4 0.0 0.0 1.2 5.1
+RCC Col2ext2   0.0 0.0 40.4 0.0 0.0 1.2 6.5
+RCC epdm2int   0.0 0.0 41.6 0.0 0.0 0.4 5.5
+RCC epdm2ext   0.0 0.0 41.6 0.0 0.0 0.4 6.
+RCC alu2int    0.0 0.0 41.6 0.0 0.0 0.4 5.
+RCC alu2ext    0.0 0.0 41.6 0.0 0.0 0.4 5.5
+RCC Col3int    0.0 0.0 42. 0.0 0.0 1.2 5.1
+RCC Col3ext    0.0 0.0 42. 0.0 0.0 1.2 6.5
+RCC Tube3int   0.0 0.0 43.2 0.0 0.0 260.4 5.1
+RCC Tube3ext   0.0 0.0 43.2 0.0 0.0 260.4 5.4
+RCC Col3int2   0.0 0.0 303.6 0.0 0.0 1.2 5.1
+RCC Col3ext2   0.0 0.0 303.6 0.0 0.0 1.2 9.
+RCC epdm3int   0.0 0.0 304.8 0.0 0.0 0.4 8.05
+RCC epdm3ext   0.0 0.0 304.8 0.0 0.0 0.4 8.55
+RCC alu3int    0.0 0.0 304.8 0.0 0.0 0.4 7.55
+RCC alu3ext    0.0 0.0 304.8 0.0 0.0 0.4 8.05
+RCC Col4int    0.0 0.0 305.2 0.0 0.0 1.2 7.65
+RCC Col4ext    0.0 0.0 305.2 0.0 0.0 1.2 9.
+RCC Tube4int   0.0 0.0 306.4 0.0 0.0 308.3 7.65
+RCC Tube4ext   0.0 0.0 306.4 0.0 0.0 308.3 7.95
+RCC Col4int2   0.0 0.0 614.7 0.0 0.0 0.3 5.1
+RCC Col4ext2   0.0 0.0 614.7 0.0 0.0 0.3 7.95
+RCC Red4int    0.0 0.0 615. 0.0 0.0 4.8 5.1
+RCC Red4ext    0.0 0.0 615. 0.0 0.0 4.8 5.4
+RCC Col4int3   0.0 0.0 619.8 0.0 0.0 1.2 5.1
+RCC Col4ext3   0.0 0.0 619.8 0.0 0.0 1.2 6.5
+RCC Olli1int   0.0 0.0 317.5 0.0 0.0 2.995 2.5
+RCC Olli1ext   0.0 0.0 317.5 0.0 0.0 2.995 6.8
+RCC Olli2int   0.0 0.0 318. 0.0 0.0 2. 6.8
+RCC Olli2ext   0.0 0.0 318. 0.0 0.0 2. 7.3
+RCC Tantale    0.0 0.0 320.495 0.0 0.0 0.005 6.8
+RCC Olli3int   0.0 0.0 607.5 0.0 0.0 3.0 2.5
+RCC Olli3ext   0.0 0.0 607.5 0.0 0.0 3.0 6.8
+RCC Olli4int   0.0 0.0 608. 0.0 0.0 2.0 6.8
+RCC Olli4ext   0.0 0.0 608. 0.0 0.0 2.0 7.3
+RCC ev1int     0.0 0.0 621. 0.0 0.0 0.4 5.5
+RCC ev1ext     0.0 0.0 621. 0.0 0.0 0.4 6.
+RCC av1int     0.0 0.0 621. 0.0 0.0 0.4 5.
+RCC av1ext     0.0 0.0 621. 0.0 0.0 0.4 5.5
+RCC Vanneint   0.0 0.0 621.4 0.0 0.0 5.6 5.1
+RCC Vanneext   0.0 0.0 621.4 0.0 0.0 5.6 8.25
+RCC ev2int     0.0 0.0 627. 0.0 0.0 0.4 5.5
+RCC ev2ext     0.0 0.0 627. 0.0 0.0 0.4 6.
+RCC av2int     0.0 0.0 627. 0.0 0.0 0.4 5.
+RCC av2ext     0.0 0.0 627. 0.0 0.0 0.4 5.5
+RCC Col5int    0.0 0.0 627.4 0.0 0.0 1.2 5.1
+RCC Col5ext    0.0 0.0 627.4 0.0 0.0 1.2 6.5
+RCC Tube5int   0.0 0.0 628.6 0.0 0.0 10.3 5.1
+RCC Tube5ext   0.0 0.0 628.6 0.0 0.0 10.3 5.4
+RCC Col5int2   0.0 0.0 638.9 0.0 0.0 1.2 5.1
+RCC Col5ext2   0.0 0.0 638.9 0.0 0.0 1.2 6.5
+RCC epdm5int   0.0 0.0 640.1 0.0 0.0 0.4 5.5
+RCC epdm5ext   0.0 0.0 640.1 0.0 0.0 0.4 6.
+RCC alu5int    0.0 0.0 640.1 0.0 0.0 0.4 5.
+RCC alu5ext    0.0 0.0 640.1 0.0 0.0 0.4 5.5
+RCC Col6int    0.0 0.0 640.5 0.0 0.0 1.2 5.1
+RCC Col6ext    0.0 0.0 640.5 0.0 0.0 1.2 6.5
+RCC Tube6int   0.0 0.0 641.7 0.0 0.0 225.2 5.1
+RCC Tube6ext   0.0 0.0 641.7 0.0 0.0 225.2 5.4
+RCC Col6int2   0.0 0.0 866.9 0.0 0.0 1.2 5.1
+RCC Col6ext2   0.0 0.0 866.9 0.0 0.0 1.2 6.5
+RCC epdm6int   0.0 0.0 868.1 0.0 0.0 0.4 5.5
+RCC epdm6ext   0.0 0.0 868.1 0.0 0.0 0.4 6.
+RCC alu6int    0.0 0.0 868.1 0.0 0.0 0.4 5.
+RCC alu6ext    0.0 0.0 868.1 0.0 0.0 0.4 5.5
+RCC Col7int    0.0 0.0 868.5 0.0 0.0 1.2 5.1
+RCC Col7ext    0.0 0.0 868.5 0.0 0.0 1.2 6.5
+RCC Tube7int   0.0 0.0 869.7 0.0 0.0 54.1 5.1
+RCC Tube7ext   0.0 0.0 869.7 0.0 0.0 54.1 5.4
+RCC Col7int2   0.0 0.0 923.8 0.0 0.0 1.2 5.1
+RCC Col7ext2   0.0 0.0 923.8 0.0 0.0 1.2 5.4
+RCC epdm7int   0.0 0.0 925. 0.0 0.0 0.4 5.5
+RCC epdm7ext   0.0 0.0 925. 0.0 0.0 0.4 6.
+RCC alu7int    0.0 0.0 925. 0.0 0.0 0.4 5.
+RCC alu7ext    0.0 0.0 925. 0.0 0.0 0.4 5.5
+RCC Bag1int    0.0 0.0 925.4 0.0 0.0 1.2 3.25
+RCC Bag1ext    0.0 0.0 925.4 0.0 0.0 1.2 6.5
+RCC Bag2int    0.0 0.0 926.6 0.0 0.0 1.2 3.25
+RCC Bag2ext    0.0 0.0 926.6 0.0 0.0 1.2 5.3
+RCC Kapton     0.0 0.0 927.8 0.0 0.0 0.013 4.3
+RCC Bag3int    0.0 0.0 927.813 0.0 0.0 1.187 3.25
+RCC Bag3ext    0.0 0.0 927.813 0.0 0.0 1.187 5.3
+RCC Col8int    0.0 0.0 957.10015 0.0 0.0 1.00006 4.8
+RCC Col8ext    0.0 0.0 957.10015 0.0 0.0 1.00006 6.5
+RCC Tube8int   0.0 0.0 958.10021 0.0 0.0 97.99999 4.8
+RCC Tube8ext   0.0 0.0 958.10021 0.0 0.0 97.99999 5.
+RCC Olli8int   0.0 0.0 956.60015 0.0 0.0 0.7 2.5
+RCC Olli8ext   0.0 0.0 956.60015 0.0 0.0 0.7 4.8
+RCC Olli8in2   0.0 0.0 956.80015 0.0 0.0 0.3 4.8
+RCC Olli8ex2   0.0 0.0 956.80015 0.0 0.0 0.3 5.3
+RCC Col8int2   0.0 0.0 1056.1002 0.0 0.0 0.6 4.8
+RCC Col8ext2   0.0 0.0 1056.1002 0.0 0.0 0.6 6.5
+RCC Olli8in3   0.0 0.0 956.60015 0.0 0.0 0.19985 4.8
+RCC Olli8ex3   0.0 0.0 956.60015 0.0 0.0 0.19985 5.1
+RCC Coteb1c    0.0 0.0 954.8 0.0 0.0 2.00015 5.1
+RPP Coteb1p    -10.5 10.5 -12. 12. 954.8 956.80015
+RCC Coteb1c2   0.0 0.0 929.0 0.0 0.0 2.2 5.1
+RPP Coteb1p2   -10.5 10.5 -12. 12. 929.0 931.2
+RPP Fondb1     -12. -10.5 -12. 12. 929.2 956.80015
+RPP Coteb13    -10.5 10.5 10. 12. 931.2 954.8
+RPP Coteb14    -10.5 10.5 -12. -10. 931.2 954.8
+RPP Fondb12    -10.5 -10. -10. 10. 931.2 954.8
+RCC Plaqsupc   0.0 0.0 940.4 0.0 0.0 0.8 4.
+RPP Plaqsupp   -10. 10. -10. 10. 940.4 941.2
+RPP Surb1      10.5 12. -12. 12. 945.8 956.8
+RPP Surb12     10. 10.5 -10. 10. 945.8 954.8
+RPP Capot1     10.5 14.1 11.6 12. 929.6 945.4
+RPP Capot2     10.5 14.5 -12. 12. 945.4 945.8
+RPP Capot3     14.1 14.5 -12. 12. 929.6 945.4
+RPP Capot4     10.5 14.5 -12. 12. 929.2 929.6
+RPP Capot5     10.5 14.1 -12. -11.6 929.6 945.4
+RCC Col8int3   0.0 0.0 1056.7002 0.0 0.0 0.5498 5.1
+RCC Col8ext3   0.0 0.0 1056.7002 0.0 0.0 0.5498 6.5
+RCC Tube9int   0.0 0.0 1057.25 0.0 0.0 2.75 5.7
+RCC Tube9ext   0.0 0.0 1057.25 0.0 0.0 2.75 6.1
+RCC Col9int    0.0 0.0 1060. 0.0 0.0 0.7 5.7
+RCC Col9ext    0.0 0.0 1060. 0.0 0.0 0.7 6.5
+RCC Col9int2   0.0 0.0 1060.7 0.0 0.0 1.1 5.7
+RCC Col9ext2   0.0 0.0 1060.7 0.0 0.0 1.1 8.3
+RCC Mtb2c      0.0 0.0 1061.8 0.0 0.0 2.0 5.1
+RPP Mtb2p      -30.599651 12.000349 -12. 12. 1061.8 1063.8
+RCC Mtb2c2     0.0 0.0 1124. 0.0 0.0 1. 3.5
+RPP Mtb2p2     -30.599651 12.000349 -12. 12. 1124. 1125.
+RCC Mtb2c3     0.0 0.0 1125. 0.0 0.0 1. 6.
+RPP Mtb2p3     -30.599651 12.000349 -12. 12. 1125. 1126.
+RPP Coteb2     -9.9996507 10. 10. 12. 1063.8 1124.
+RPP Cote2b2    -10. 10. -12. -10. 1063.8 1124.
+RCC Plqalu1c   0.0 0.0 1122.6 0.0 0.0 1.4 3.75
+RPP Plqalu1p   -9.9996507 10. -10. 10. 1122.6 1124.
+RCC Plqalu2c   0.0 0.0 1093.6 0.0 0.0 0.5 5.7999664
+RPP Plqalu2p   -10. 10. -10. 10. 1093.6 1094.1
+RCC Plqalu3c   0.0 0.0 1094.1 0.0 0.0 0.5 5.
+RPP Plqalu3p   -9.9996507 10. -10. 10. 1094.1 1094.6
+RCC Ollib2i    0.0 0.0 1093.6 0.0 0.0 1. 2.249971
+RCC Ollib2e    0.0 0.0 1093.6 0.0 0.0 1. 5.
+RCC Ollib2i2   0.0 0.0 1093.6 0.0 0.0 0.5 5.
+RCC Ollib2e2   0.0 0.0 1093.6 0.0 0.0 0.5 5.7999664
+RCC Nez1int    0.0 0.0 1124. 0.0 0.0 1. 2.25
+RCC Nez1ext    0.0 0.0 1124. 0.0 0.0 1. 3.5
+RCC Nez2int    0.0 0.0 1125. 0.0 0.0 1. 2.25
+RCC Nez2ext    0.0 0.0 1125. 0.0 0.0 1. 6.0
+RCC Nez3int    0.0 0.0 1126. 0.0 0.0 0.5 2.25
+RCC Nez3ext    0.0 0.0 1126. 0.0 0.0 0.5 2.8499804
+RCC Nez4int    0.0 0.0 1126.5 0.0 0.0 1.9 2.25
+RCC Nez4ext    0.0 0.0 1126.5 0.0 0.0 1.9 4.0999939
+RCC Nez5int    0.0 0.0 1124. 0.0 0.0 9. 1.6999649
+RCC Nez5ext    0.0 0.0 1124. 0.0 0.0 9. 2.25
+RCC Ollib2i3   0.0 0.0 1064.6 0.0 0.0 0.5 2.25
+RCC Ollib2e3   0.0 0.0 1064.6 0.0 0.0 0.5 5.
+RCC Ollib2i4   0.0 0.0 1064.1 0.0 0.0 0.5 2.25
+RCC Ollib2e4   0.0 0.0 1064.1 0.0 0.0 0.5 5.7999664
+RCC Sup1c      0.0 0.0 1064.1 0.0 0.0 0.5 5.7999664
+RPP Sup1p      -9.9996507 10. -10. 10. 1064.1 1064.6
+RCC Sup2c      0.0 0.0 1064.6 0.0 0.0 0.5 5.
+RPP Sup2p      -9.9996507 9.5003493 -10. 10. 1064.6 1065.1
+RCC Sup3c      0.0 0.0 1069.1 0.0 0.0 2.5 5.899968
+RPP Sup3p      -9.9996507 9.5003493 -10. 10. 1069.1 1071.6
+RCC Sup4c      0.0 0.0 1072. 0.0 0.0 2.5 5.899968
+RPP Sup4p      -9.9996507 10. -10. 10. 1072. 1074.5
+RCC Chio1int   0.0 0.0 1069.1 0.0 0.0 2.15 3.9
+RCC Chio1ext   0.0 0.0 1069.1 0.0 0.0 2.15 5.899968
+RCC Chio1in2   0.0 0.0 1070.0505 0.0 0.0 1.1995 3.
+RCC Chio1ex2   0.0 0.0 1070.0505 0.0 0.0 1.1995 3.9
+RCC Sup5int    0.0 0.0 1071.25 0.0 0.0 0.35 4.25
+RCC Sup5ext    0.0 0.0 1071.25 0.0 0.0 0.35 5.899968
+RCC Mylar1     0.0 0.0 1069.7 0.0 0.0 0.0005 3.9
+RCC Mylar2     0.0 0.0 1070.05 0.0 0.0 0.0005 3.9
+RCC Chio2int   0.0 0.0 1072. 0.0 0.0 2.15 3.9
+RCC Chio2ext   0.0 0.0 1072. 0.0 0.0 2.15 5.899968
+RCC Sup6int    0.0 0.0 1072.9505 0.0 0.0 1.1095 3.
+RCC Sup6ext    0.0 0.0 1072.9505 0.0 0.0 1.1095 3.9
+RCC Sup7int    0.0 0.0 1074.15 0.0 0.0 0.35 4.25
+RCC Sup7ext    0.0 0.0 1074.15 0.0 0.0 0.35 5.899968
+RCC Mylar3     0.0 0.0 1072.6 0.0 0.0 0.0005 3.9
+RCC Mylar4     0.0 0.0 1072.95 0.0 0.0 0.0005 3.9
+RCC Reti1      0.0 -2. 1100. 0.0 4. 0.0 0.0075
+RCC Reti2      -2.5 0.0 1100. 5. 0.0 0.0 0.0075
+RPP Couverc    10. 12.000349 -12. 12. 1063.8 1094.7
+RPP Fondb2     -12. -10. -12. 12. 1063.8 1124.
+RPP Capot6     10.000349 12.000349 -12. 12. 1111.2 1124.
+RPP Capot7     11.800349 12.000349 -12. 12. 1094.7 1111.2
+RPP Capot8     10.000349 11.800349 11.8 12. 1094.7 1111.2
+RPP Capot9     10. 11.800349 -12. 11.8 1094.7 1111.2
+RCC Tantale2   0.0 0.0 -0.0005 0.0 0.0 0.0005 5.4
+RCC OlliFint   0.0 0.0 1133. 0.0 0.0 0.1 1.25
+RCC OlliFext   0.0 0.0 1133. 0.0 0.0 0.1 2.25
+RCC OlliFin2   0.0 0.0 1132.4 0.0 0.0 0.6 1.25
+RCC OlliFex2   0.0 0.0 1132.4 0.0 0.0 0.6 1.6999649
+RPP Fantome    -10. 10. -10. 10. 1140. 1160.
+END
+Blckbody     5 CylAir2-CylAir
+Vide         5 +Tube1int |+Col1int |+alu1int |+Col2int |+Tube2int |+Col2int2 |+alu2int |+Col3int
+               |+Tube3int |+Col3int2 |+alu3int |+Col4int
+               |+Tube4int -Olli2ext -Olli1ext -Olli3ext -Olli4ext -Tantale |+Olli1int |+Olli3int
+               |+Col4int2 |+Red4int |+Col4int3 |+av1int |+Vanneint
+               |+av2int |+Col5int |+Tube5int |+Col5int2 |+alu5int |+Col6int |+Tube6int |+Col6int2
+               |+alu6int |+Col7int |+Tube7int |+Col7int2 |+alu7int |+Bag1int |+Bag2int
+Air1         5 +CylAir -Fantome
+               -alu1ext -alu2ext -alu3ext -alu5ext -alu6ext -alu7ext -av1ext -av2ext -Bag1ext -Bag2ext
+               -Bag3ext -Capot1 -Capot2 -Capot3 -Capot4 -Capot5 -Capot6 -Capot7 -Capot8
+               -Capot9 -Chio1ex2 -Chio1ext -Chio2ext -Col1ext -Col2ext -Col2ext2 -Col3ext -Col3ext2 -Col4ext
+               -Col4ext2 -Col4ext3 -Col5ext -Col5ext2 -Col6ext -Col6ext2 -Col7ext -Col7ext2 -Col8ext
+               -Col8ext2 -Col8ext3 -Col9ext -Col9ext2 -Cote2b2 -Coteb13 -Coteb14  -Coteb1p -Coteb1p2
+               -Coteb2 -Couverc -epdm1ext -epdm2ext -epdm3ext -epdm5ext -epdm6ext -epdm7ext -ev1ext
+               -ev2ext -Fondb1 -Fondb12 -Fondb2  -Mtb2c2-Mtb2p -Mtb2p2 -Mtb2p3 -Mylar1
+               -Mylar2 -Mylar3 -Mylar4  -Nez2ext -Nez3ext -Nez4ext -Nez5ext -Olli1ext -Olli2ext -Olli3ext
+               -Olli4ext -Olli8ex2 -Olli8ex3 -Olli8ext  -Ollib2e -Ollib2e2 -Ollib2i -Ollib2i2  -OlliFext -Plaqsupc
+               -Plaqsupp -Plqalu1c -Plqalu1p -Plqalu2c -Plqalu2p -Plqalu3c -Plqalu3p -Red4ext
+               -Reti1 -Reti2 -Sup1c -Sup1p -Sup2c -Sup2p -Sup3p -Sup4p -Sup5ext -Sup6ext -Sup7ext
+               -Surb1 -Surb12 -Tantale -Tantale2 -Tube1ext -Tube2ext -Tube3ext -Tube4ext
+               -Tube5ext -Tube6ext -Tube7ext -Tube8ext -Tube9ext -Vanneext -Kapton
+Air2         5 |+Bag3int |+Coteb1c2 |+Plaqsupc |+Coteb1c -Olli8ex3 -Olli8ext |+Col8int -Olli8ext |+Olli8int
+               |+Tube8int |+Col8int2 |+Col8int3
+               |+Tube9int |+Col9int |+Col9int2 |+Mtb2c |+Ollib2i4 |+Ollib2i3 |+Chio1int -Mylar1 -Chio1ex2
+               -Mylar2 |+Chio2int -Mylar3 -Mylar4 -Sup6ext |+Sup6int
+               |+Sup5int |+Chio1in2 |+Sup7int |+Ollib2i |+Plqalu1c |+Nez5int -OlliFex2 |+OlliFin2 |+OlliFint
+Tube1        5 +Tube1ext -Tube1int
+Col1         5 +Col1ext -Col1int
+epdm1        5 +epdm1ext -epdm1int
+alu1         5 +alu1ext -alu1int
+Col2         5 +Col2ext -Col2int
+Tube2        5 +Tube2ext -Tube2int
+Col22        5 +Col2ext2 -Col2int2
+epdm2        5 +epdm2ext -epdm2int
+alu2         5 +alu2ext -alu2int
+Col3         5 +Col3ext -Col3int
+Tube3        5 +Tube3ext -Tube3int
+Col32        5 +Col3ext2 -Col3int2
+epdm3        5 +epdm3ext -epdm3int
+alu3         5 +alu3ext -alu3int
+Col4         5 +Col4ext -Col4int
+Tube4        5 +Tube4ext -Tube4int
+Col42        5 +Col4ext2 -Col4int2
+Red4         5 +Red4ext -Red4int
+Col43        5 +Col4ext3 -Col4int3
+Colli1       5 +Olli1ext -Olli1int
+Colli12      5 +Olli2ext -Olli2int
+Tantale      5 +Tantale
+Colli2       5 +Olli3ext -Olli3int
+Colli22      5 +Olli4ext -Olli4int
+ev1          5 +ev1ext -ev1int
+av1          5 +av1ext -av1int
+Vanne        5 +Vanneext -Vanneint
+ev2          5 +ev2ext -ev2int
+av2          5 +av2ext -av2int
+Col5         5 +Col5ext -Col5int
+Tube5        5 +Tube5ext -Tube5int
+Col52        5 +Col5ext2 -Col5int2
+epdm5        5 +epdm5ext -epdm5int
+alu5         5 +alu5ext -alu5int
+Col6         5 +Col6ext -Col6int
+Tube6        5 +Tube6ext -Tube6int
+Col62        5 +Col6ext2 -Col6int2
+epdm6        5 +epdm6ext -epdm6int
+alu6         5 +alu6ext -alu6int
+Col7         5 +Col7ext -Col7int
+Tube7        5 +Tube7ext -Tube7int
+Col72        5 +Col7ext2 -Col7int2
+epdm7        5 +epdm7ext -epdm7int
+alu7         5 +alu7ext -alu7int
+Bague1       5 +Bag1ext -Bag1int
+Bague2       5 +Bag2ext -Bag2int
+Kapton       5 +Kapton
+Bague3       5 +Bag3ext -Bag3int
+Col8         5 +Col8ext -Col8int
+Tube8        5 +Tube8ext -Tube8int
+Colli8       5 +Olli8ext -Olli8int
+Colli82      5 +Olli8ex2 -Olli8in2
+Col82        5 +Col8ext2 -Col8int2
+Colli83      5 +Olli8ex3 -Olli8in3
+Coteb1       5 +Coteb1p -Coteb1c
+Coteb12      5 +Coteb1p2 -Coteb1c2
+Fondb1       5 +Fondb1
+Coteb13      5 +Coteb13
+Coteb14      5 +Coteb14
+Fondb12      5 +Fondb12
+Plaqsup      5 +Plaqsupp -Plaqsupc
+Surb1        5 +Surb1
+Surb12       5 +Surb12
+Capot1       5 +Capot1
+Capot2       5 +Capot2
+Capot3       5 +Capot3
+Capot4       5 +Capot4
+Capot5       5 +Capot5
+Col83        5 +Col8ext3 -Col8int3
+Tube9        5 +Tube9ext -Tube9int
+Col9         5 +Col9ext -Col9int
+Col92        5 +Col9ext2 -Col9int2
+Montb2       5 +Mtb2p -Mtb2c
+Mont2b2      5 +Mtb2p2 -Mtb2c2
+Mont3b2      5 +Mtb2p3 -Mtb2c3
+Coteb2       5 +Coteb2
+Cote2b2      5 +Cote2b2
+Plqalu1      5 +Plqalu1p -Plqalu1c
+Plqalu2      5 +Plqalu2p -Plqalu2c
+Plqalu3      5 +Plqalu3p -Plqalu3c
+Collib2      5 +Ollib2e -Ollib2i
+Colli2b2     5 +Ollib2e2 -Ollib2i2
+Nez1         5 +Nez1ext -Nez1int
+Nez2         5 +Nez2ext -Nez2int
+Nez3         5 +Nez3ext -Nez3int
+Nez4         5 +Nez4ext -Nez4int
+Nez5         5 +Nez5ext -Nez5int
+Colli3b2     5 +Ollib2e3 -Ollib2i3
+Colli4b2     5 +Ollib2e4 -Ollib2i4
+Support1     5 +Sup1p -Sup1c
+Support2     5 +Sup2p -Sup2c
+Support3     5 +Sup3p -Sup3c
+Support4     5 +Sup4p -Sup4c
+Chio1        5 +Chio1ext -Chio1int
+Chio12       5 +Chio1ex2 -Chio1in2
+Support5     5 +Sup5ext -Sup5int
+Mylar1       5 +Mylar1
+Mylar2       5 +Mylar2
+Chio2        5 +Chio2ext -Chio2int
+Support6     5 +Sup6ext -Sup6int
+Support7     5 +Sup7ext -Sup7int
+Mylar3       5 +Mylar3
+Mylar4       5 +Mylar4
+Retic1       5 +Reti1
+Retic2       5 +Reti2 -Reti1
+Couverc      5 +Couverc
+Fondb2       5 +Fondb2
+Capot6       5 +Capot6
+Capot7       5 +Capot7
+Capot8       5 +Capot8
+Capot9       5 +Capot9
+Tantale2     5 +Tantale2
+ColliFin     5 +OlliFext -OlliFint |+OlliFex2 -OlliFin2
+Fantome      5 +Fantome
+END
+GEOEND
+ASSIGNMA    BLCKHOLE  Blckbody
+MATERIAL                      1.5838E-11                              VIDETUBE
+COMPOUND       -0.78  NITROGEN     -0.22    OXYGEN                    VIDETUBE
+ASSIGNMA    VIDETUBE      Vide
+ASSIGNMA         AIR      Air1
+ASSIGNMA         AIR      Air2
+ASSIGNMA    ALUMINUM      alu1
+ASSIGNMA    ALUMINUM      alu2
+ASSIGNMA    ALUMINUM      alu3
+ASSIGNMA    ALUMINUM       av1
+ASSIGNMA    ALUMINUM     Vanne
+ASSIGNMA    ALUMINUM       av2
+ASSIGNMA    ALUMINUM      alu5
+ASSIGNMA    ALUMINUM      alu6
+ASSIGNMA    ALUMINUM      alu7
+ASSIGNMA    ALUMINUM    Bague1
+ASSIGNMA    ALUMINUM    Bague2
+ASSIGNMA    ALUMINUM    Bague3
+ASSIGNMA    ALUMINUM    Coteb1
+ASSIGNMA    ALUMINUM   Coteb12
+ASSIGNMA    ALUMINUM    Fondb1
+ASSIGNMA    ALUMINUM   Coteb13
+ASSIGNMA    ALUMINUM   Coteb14
+ASSIGNMA    ALUMINUM   Fondb12
+ASSIGNMA    ALUMINUM   Plaqsup
+ASSIGNMA    ALUMINUM     Surb1
+ASSIGNMA    ALUMINUM    Surb12
+ASSIGNMA    ALUMINUM   Plqalu1
+ASSIGNMA    ALUMINUM   Plqalu2
+ASSIGNMA    ALUMINUM   Plqalu3
+ASSIGNMA    ALUMINUM  Support1
+ASSIGNMA    ALUMINUM  Support2
+ASSIGNMA    ALUMINUM   Couverc
+ASSIGNMA    ALUMINUM    Capot6
+ASSIGNMA    ALUMINUM    Capot7
+ASSIGNMA    ALUMINUM    Capot8
+ASSIGNMA    ALUMINUM    Capot9
+ASSIGNMA      CARBON    Colli1
+ASSIGNMA      CARBON   Colli12
+ASSIGNMA      CARBON    Colli2
+ASSIGNMA      CARBON   Colli22
+ASSIGNMA    TUNGSTEN    Retic1
+ASSIGNMA    TUNGSTEN    Retic2
+ASSIGNMA        PMMA    Capot1
+ASSIGNMA        PMMA    Capot2
+ASSIGNMA        PMMA    Capot3
+ASSIGNMA        PMMA    Capot4
+ASSIGNMA        PMMA    Capot5
+ASSIGNMA        PMMA  Support3
+ASSIGNMA        PMMA  Support4
+ASSIGNMA        PMMA     Chio1
+ASSIGNMA        PMMA    Chio12
+ASSIGNMA        PMMA  Support5
+ASSIGNMA        PMMA     Chio2
+ASSIGNMA        PMMA  Support6
+ASSIGNMA        PMMA  Support7
+ASSIGNMA      KAPTON    Kapton
+ASSIGNMA    TANTALUM   Tantale
+ASSIGNMA    TANTALUM  Tantale2
+MATERIAL                             8.4                              LAITON
+COMPOUND        0.58    COPPER      0.39      ZINC      0.03      LEADLAITON
+MATERIAL         30.               7.133                              ZINC
+ASSIGNMA      LAITON    Colli8
+ASSIGNMA      LAITON   Colli82
+ASSIGNMA      LAITON   Colli83
+ASSIGNMA      LAITON   Collib2
+ASSIGNMA      LAITON  Colli2b2
+ASSIGNMA      LAITON      Nez5
+ASSIGNMA      LAITON  Colli3b2
+ASSIGNMA      LAITON  Colli4b2
+ASSIGNMA      LAITON  ColliFin
+MATERIAL                             2.7                              ALCAPLUS
+COMPOUND        0.92  ALUMINUM      0.02  MAGNESIU      0.06   GALLIUMALCAPLUS
+MATERIAL         31.               5.904                              GALLIUM
+ASSIGNMA    ALCAPLUS     Tube9
+ASSIGNMA    ALCAPLUS      Col9
+ASSIGNMA    ALCAPLUS     Col92
+ASSIGNMA    ALCAPLUS    Montb2
+ASSIGNMA    ALCAPLUS   Mont2b2
+ASSIGNMA    ALCAPLUS   Mont3b2
+ASSIGNMA    ALCAPLUS    Coteb2
+ASSIGNMA    ALCAPLUS   Cote2b2
+ASSIGNMA    ALCAPLUS    Fondb2
+MATERIAL                             7.9                              INOX
+COMPOUND        0.18  CHROMIUM    0.0683    NICKEL     0.001    NICKELINOX
+COMPOUND        0.69      IRON    0.0261    NICKEL     0.001    NICKELINOX
+COMPOUND        0.01   SILICON    0.0036    NICKEL      0.02  MANGANESINOX
+MATERIAL         25.                7.44                              MANGANES
+MATERIAL         24.                 7.8                              CHROMIUM
+ASSIGNMA        INOX     Tube1
+ASSIGNMA        INOX      Col1
+ASSIGNMA        INOX      Col2
+ASSIGNMA        INOX     Tube2
+ASSIGNMA        INOX     Col22
+ASSIGNMA        INOX      Col3
+ASSIGNMA        INOX     Tube3
+ASSIGNMA        INOX     Col32
+ASSIGNMA        INOX      Col4
+ASSIGNMA        INOX     Tube4
+ASSIGNMA        INOX     Col42
+ASSIGNMA        INOX      Red4
+ASSIGNMA        INOX     Col43
+ASSIGNMA        INOX      Col5
+ASSIGNMA        INOX     Tube5
+ASSIGNMA        INOX     Col52
+ASSIGNMA        INOX      Col6
+ASSIGNMA        INOX     Tube6
+ASSIGNMA        INOX     Col62
+ASSIGNMA        INOX      Col7
+ASSIGNMA        INOX     Tube7
+ASSIGNMA        INOX     Col72
+ASSIGNMA        INOX      Col8
+ASSIGNMA        INOX     Tube8
+ASSIGNMA        INOX     Col82
+ASSIGNMA        INOX     Col83
+ASSIGNMA        INOX      Nez1
+ASSIGNMA        INOX      Nez2
+ASSIGNMA        INOX      Nez3
+ASSIGNMA        INOX      Nez4
+MATERIAL                            0.86                              EPDM
+COMPOUND       0.333    CARBON     0.667  HYDROGEN                    EPDM
+ASSIGNMA        EPDM     epdm1
+ASSIGNMA        EPDM     epdm2
+ASSIGNMA        EPDM     epdm3
+ASSIGNMA        EPDM       ev1
+ASSIGNMA        EPDM       ev2
+ASSIGNMA        EPDM     epdm5
+ASSIGNMA        EPDM     epdm6
+ASSIGNMA        EPDM     epdm7
+MATERIAL                            1.38                              ALUMISE
+COMPOUND      0.6248    CARBON     0.042  HYDROGEN    0.3329    OXYGENALUMISE
+COMPOUND      0.0003  ALUMINUM                                        ALUMISE
+ASSIGNMA     ALUMISE    Mylar1
+ASSIGNMA     ALUMISE    Mylar2
+ASSIGNMA     ALUMISE    Mylar3
+ASSIGNMA     ALUMISE    Mylar4
+ASSIGNMA       WATER   Fantome
+LOW-NEUT                                        1.                  1.
+RADDECAY          1.        1.                       1000010
+DCYSCORE          1.                         1dose                    USRBIN
+USRBIN           10.   DOSE-EQ      -31.       40.       40.     1240.1dose
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+DCYSCORE          2.                         2dose                    USRBIN
+USRBIN           10.   DOSE-EQ      -32.       40.       40.     1240.2dose
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+DCYSCORE          3.                         3dose                    USRBIN
+USRBIN           10.   DOSE-EQ      -33.       40.       40.     1240.3dose
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+DCYSCORE          1.                      1neutron                    USRBIN
+USRBIN           10.   NEUTRON      -41.       40.       40.     1240.1neutron
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+DCYSCORE          2.                      2neutron                    USRBIN
+USRBIN           10.   NEUTRON      -42.       40.       40.     1240.2neutron
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+DCYSCORE          3.                      3neutron                    USRBIN
+USRBIN           10.   NEUTRON      -43.       40.       40.     1240.3neutron
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+DCYSCORE          1.                       1photon                    USRBIN
+USRBIN           10.    PHOTON      -51.       40.       40.     1240.1photon
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+DCYSCORE          2.                       2photon                    USRBIN
+USRBIN           10.    PHOTON      -52.       40.       40.     1240.2photon
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+DCYSCORE          3.                       3photon                    USRBIN
+USRBIN           10.    PHOTON      -53.       40.       40.     1240.3photon
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+DCYSCORE          1.                       1proton                    USRBIN
+USRBIN           10.    PROTON      -61.       40.       40.     1240.1proton
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+DCYSCORE          2.                       2proton                    USRBIN
+USRBIN           10.    PROTON      -62.       40.       40.     1240.2proton
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+DCYSCORE          3.                       3proton                    USRBIN
+USRBIN           10.    PROTON      -63.       40.       40.     1240.3proton
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+USRBIN           10.   DOSE-EQ      -81.       40.       40.     1240.dose
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+USRBIN           10.   NEUTRON      -82.       40.       40.     1240.neutr
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+USRBIN           10.    PHOTON      -83.       40.       40.     1240.photo
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+USRBIN           10.    PROTON      -84.       40.       40.     1240.proto
+USRBIN          -40.      -40.     -100.       80.       80.      134. &
+IRRPROFI         4.3    1.4E10
+DCYSCORE          1.                      1tantale  1fantome          RESNUCLE
+RESNUCLE          3.      -21.                       Tantale          1tantale
+RESNUCLE          3.      -21.                        Kapton          1kapton
+RESNUCLE          3.      -21.                        Colli8          1colli8
+RESNUCLE          3.      -21.                        Mylar1          1mylar1
+RESNUCLE          3.      -21.                        Mylar2          1mylar2
+RESNUCLE          3.      -21.                        Mylar3          1mylar3
+RESNUCLE          3.      -21.                        Mylar4          1mylar4
+RESNUCLE          3.      -21.                       Collib2          1collib2
+RESNUCLE          3.      -21.                        Retic1          1retic1
+RESNUCLE          3.      -21.                        Retic2          1retic2
+RESNUCLE          3.      -21.                      ColliFin          1collifin
+RESNUCLE          3.      -21.                       Fantome          1fantome
+DCYSCORE          2.                      2tantale  2fantome          RESNUCLE
+RESNUCLE          3.      -22.                       Tantale          2tantale
+RESNUCLE          3.      -22.                        Kapton          2kapton
+RESNUCLE          3.      -22.                        Colli8          2colli8
+RESNUCLE          3.      -22.                        Mylar1          2mylar1
+RESNUCLE          3.      -22.                        Mylar2          2mylar2
+RESNUCLE          3.      -22.                        Mylar3          2mylar3
+RESNUCLE          3.      -22.                        Mylar4          2mylar4
+RESNUCLE          3.      -22.                       Collib2          2collib2
+RESNUCLE          3.      -22.                        Retic1          2retic1
+RESNUCLE          3.      -22.                        Retic2          2retic2
+RESNUCLE          3.      -22.                      ColliFin          2collifin
+RESNUCLE          3.      -22.                       Fantome          2fantome
+DCYSCORE          3.                      3tantale  3fantome          RESNUCLE
+RESNUCLE          3.      -23.                       Tantale          3tantale
+RESNUCLE          3.      -23.                        Kapton          3kapton
+RESNUCLE          3.      -23.                        Colli8          3colli8
+RESNUCLE          3.      -23.                        Mylar1          3mylar1
+RESNUCLE          3.      -23.                        Mylar2          3mylar2
+RESNUCLE          3.      -23.                        Mylar3          3mylar3
+RESNUCLE          3.      -23.                        Mylar4          3mylar4
+RESNUCLE          3.      -23.                       Collib2          3collib2
+RESNUCLE          3.      -23.                        Retic1          3retic1
+RESNUCLE          3.      -23.                        Retic2          3retic2
+RESNUCLE          3.      -23.                      ColliFin          3collifin
+RESNUCLE          3.      -23.                       Fantome          3fantome
+DCYTIMES          1.      620.    13726.
+BEAMPOS          0.0       0.0       0.0
+SOURCE           90.
+START          5000.
+RANDOMIZ          1.
+OPEN             90.                                                  OLD
+source.dat
+STOP

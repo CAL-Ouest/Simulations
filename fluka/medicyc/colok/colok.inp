@@ -1,0 +1,117 @@
+TITLE
+
+* Set the defaults for precision simulations
+DEFAULTS                                                              PRECISIO
+* Define the beam characteristics
+BEAM         -0.0625                           1.7       0.0      -1.0PROTON
+* Define the beam position
+BEAMPOS          0.0       0.0       -5.
+PHOTONUC          1.                         Brass
+PHYSICS           3.                                                  EVAPORAT
+PHYSICS           1.                                                  COALESCE
+GEOBEGIN                                                              COMBNAME
+    0    0          
+* Black body
+SPH blkbody    0.0 0.0 0.0 100000.0
+* Void sphere
+SPH void       0.0 0.0 0.0 10000.0
+* Cylindrical target
+RCC target     0.0 0.0 0.0 0.0 0.0 0.6 1.7
+* Cylindrical target
+RCC target1    0.0 0.0 0.6 0.0 0.0 0.2 2.
+RCC bpipeout   0.0 0.0 -5. 0.0 0.0 5.6 2.
+RCC bpipein    0.0 0.0 -5. 0.0 0.0 5. 1.7
+END
+* Black hole
+BLKBODY      5 +blkbody -void
+* Void around
+VOID         5 +void -target -target1
+               -(bpipeout -bpipein -target )
+* Target
+TARGET       5 +target
+               |+target1
+PIPE         5 +bpipeout -bpipein -target
+END
+GEOEND
+* Brass (typical)
+* Brass can have a wide variation of Cu/Zn content. Pb is not
+* always present.
+MATERIAL                             8.4                              Brass
+COMPOUND        58.0    COPPER       0.3      IRON       3.0      LEADBrass
+COMPOUND         0.1  ALUMINUM       0.3    NICKEL       0.3       TINBrass
+COMPOUND        38.0      ZINC                                        Brass
+MATERIAL         30.               7.133                              ZINC
+* ..+....1....+....2....+....3....+....4....+....5....+....6....+....7..
+ASSIGNMA    BLCKHOLE   BLKBODY
+ASSIGNMA         AIR      VOID
+ASSIGNMA       Brass    TARGET
+ASSIGNMA       Brass      PIPE
+LOW-NEUT        260.                            1.                  1.
+* Requests simulation of radioactive decays and sets the corresponding
+* biasing and transport conditions
+RADDECAY          1.        1.                       1000010
+* Define an irradiation profile for radioactive decay calculations / 10 nA
+IRRPROFI         4.3    1.4E10
+* Defines decay times for radioactive product scoring 1s / 10m / 4 h / 44d
+DCYTIMES          1.      620.    13726.  3801600.
+* residual nuclei of target & pipe : 1 s cooling
+DCYSCORE          1.                       1target     1pipe          RESNUCLE
+RESNUCLE          3.      -21.                        TARGET        8.1target
+RESNUCLE          3.      -21.                          PIPE     17.431pipe
+* residual nuclei of target & pipe : 10 min cooling
+DCYSCORE          2.                       2target     2pipe          RESNUCLE
+RESNUCLE          3.      -22.                        TARGET        8.2target
+RESNUCLE          3.      -22.                          PIPE     17.432pipe
+* residual nuclei of target & pipe : 4 h cooling
+DCYSCORE          3.                       3target     3pipe          RESNUCLE
+RESNUCLE          3.      -23.                        TARGET        8.3target
+RESNUCLE          3.      -23.                          PIPE     17.433pipe
+* residual nuclei of target & pipe : 44 d cooling
+DCYSCORE          4.                       4target     4pipe          RESNUCLE
+RESNUCLE          3.      -24.                        TARGET        8.4target
+RESNUCLE          3.      -24.                          PIPE     17.434pipe
+* photon distribution @ 1 s cooling
+DCYSCORE          1.                        1photo                    USRBIN
+USRBIN           10.    PHOTON      -31.       2.5       2.5        5.1photo
+USRBIN          -2.5      -2.5       -5.      100.      100.      200. &
+* dose-eq @ 1 s cooling
+DCYSCORE          1.                         1dose                    USRBIN
+USRBIN           10.   DOSE-EQ      -51.       2.5       2.5        5.1dose
+USRBIN          -2.5      -2.5       -5.      100.      100.      200. &
+* photon distribution @ 10 min cooling
+DCYSCORE          2.                        2photo                    USRBIN
+USRBIN           10.    PHOTON      -32.       2.5       2.5        5.2photo
+USRBIN          -2.5      -2.5       -5.      100.      100.      200. &
+* dose-eq @ 10 min cooling
+DCYSCORE          2.                         2dose                    USRBIN
+USRBIN           10.   DOSE-EQ      -52.       2.5       2.5        5.2dose
+USRBIN          -2.5      -2.5       -5.      100.      100.      200. &
+* photon distribution @ 4 h cooling
+DCYSCORE          3.                        3photo                    USRBIN
+USRBIN           10.    PHOTON      -33.       2.5       2.5        5.3photo
+USRBIN          -2.5      -2.5       -5.      100.      100.      200. &
+* dose-eq @ 4 h cooling
+DCYSCORE          3.                         3dose                    USRBIN
+* photon distribution @ 44 d cooling
+DCYSCORE          4.                        4photo                    USRBIN
+DCYSCORE          4.                         4dose                    USRBIN
+USRBIN           10.   DOSE-EQ      -54.       2.5       2.5        5.4dose
+USRBIN          -2.5      -2.5       -5.      100.      100.      200. &
+USRBIN           10.    PHOTON      -34.       2.5       2.5        5.4photo
+USRBIN          -2.5      -2.5       -5.      100.      100.      200. &
+USRBIN           10.   DOSE-EQ      -53.       2.5       2.5        5.3dose
+USRBIN          -2.5      -2.5       -5.      100.      100.      200. &
+* proton distribution during beam irradiation
+USRBIN           10.    PROTON      -41.       2.5       2.5        5.proto
+USRBIN          -2.5      -2.5       -5.      100.      100.      200. &
+* neutron distribution during beam irradiation
+USRBIN           10.   NEUTRON      -42.       2.5       2.5        5.neutr
+USRBIN          -2.5      -2.5       -5.      100.      100.      200. &
+* photon distribution during beam irradiation
+USRBIN           10.    PHOTON      -43.       2.5       2.5        5.photo
+USRBIN          -2.5      -2.5       -5.      100.      100.      200. &
+* Set the random number seed
+RANDOMIZ         1.0
+* Set the number of primary histories to be simulated in the run
+START         50000.
+STOP
