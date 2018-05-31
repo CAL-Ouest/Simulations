@@ -1,0 +1,9 @@
+# Display
+/gate/physics/processList Enabled
+# Ionization potential of water
+/gate/geometry/setIonisationPotential Water 75 eV
+/gate/geometry/setIonisationPotential G4_WATER 75 eV
+# dE/dx Binning
+/gate/physics/setEMin 1 eV
+/gate/physics/setEMax 1 GeV
+/gate/physics/setDEDXBinning 1200

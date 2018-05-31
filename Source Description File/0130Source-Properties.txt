@@ -1,0 +1,83 @@
+# Source properties
+
+# Nozzle exit to Isocenter distance
+458
+# SMX to Isocenter distance
+2983
+# SMY to Isocenter distance
+8484
+
+# ENERGY
+# mean energy
+# polynomial order
+3
+# polynomial parameters (highest to lowest)
+5.1082e-08
+-3.33316e-05
+1.00804
+-0.944188
+
+# energy spread
+# polynomial order
+percent
+2
+# polynomial parameters (highest to lowest)
+-3.50269e-05
+0.00644171
+0.531422
+
+# SPOT x y theta phi
+# x
+# polynomial order
+5
+# polynomial parameters
+-5.42811e-10
+4.57015e-07
+-0.000152857
+0.0254158
+-2.10939
+73.841
+# Theta
+# polynomial order
+3
+# polynomial parameters
+2.16246e-09
+-9.12803e-07
+9.18212e-05
+0.00145925
+# y
+# polynomial order
+5
+# polynomial parameters
+-4.57066e-10
+3.90371e-07
+-0.000131255
+0.0217484
+-1.78984
+62.2261
+# Phi
+# polynomial order
+3
+# polynomial parameters
+-1.59353e-09
+9.30543e-07
+-0.000192606
+0.0161707
+
+# SPOT emmittances
+# x-theta emmittance
+# polynomial order
+3
+# polynomial parameters
+5.0694e-10
+1.22697e-06
+-0.000626816
+0.0755231
+# y-phi emmittance
+# polynomial order
+3
+# polynomial parameters
+-1.63217e-08
+9.4705e-06
+-0.00189688
+0.139659
