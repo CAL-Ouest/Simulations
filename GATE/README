@@ -2,3 +2,14 @@ In this git repository I will put in all the files that are important to use the
 Enjoy,
 Katrin 
 ****************************************************************************************
+DESCRIPTION OF FOLDERS IN THIS REPOSITORY
+****************************************************************************************
+****************************************************************************************
+Source description file:
+This file contains the source description file that can be used in GATE simulations with the TPS Pencil Beam class. Have a look at the GATE Wiki for more information how to use this source in simulations.
+http://wiki.opengatecollaboration.org/index.php/Users_Guide:Source
+(See TPS Pencil Beam source)
+****************************************************************************************
+Physics parameters:
+This folder contains self-build physics lists used in the simulations. The newer versions of Geant4 may not support self-built physics lists.
+****************************************************************************************
