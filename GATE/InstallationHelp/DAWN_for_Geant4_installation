@@ -1,0 +1,32 @@
+Compilator:
+g++ (not gcc)
+
+Optimisation:
+-O2
+
+wish
+
+Input include directory of Xlib "with -I":
+default
+
+Input lib directory of Xlib "with -L":
+default
+
+Input the first include directory of OpenGL "with -I":
+default
+
+Input the second include directory of OpenGL "with -I":
+default
+
+Input lib directory of OpenGL "with -L":
+default
+
+
+
+
+
+cp -p ./dawn    	/usr/local/bin/dawn
+cp -p ./DAWN_GUI        /usr/local/bin/DAWN_GUI
+cp -p ./dawnunixd       /usr/local/bin/dawnunixd
+cp -p ./dawninetd       /usr/local/bin/dawninetd
+

@@ -1,0 +1,10 @@
+*************************************************************
+*** C O N V E R T   D I C O M   P L A N S   T O   G A T E ***
+*************************************************************
+You need vv installed: https://www.creatis.insa-lyon.fr/rio/FrontPage
+
+Convert treatment plans with clitk-Tool from vv 
+https://www.creatis.insa-lyon.fr/rio/vv-clitk#clitkDicomInfo
+
+Example:
+clitkDicomRTPlan2Gate --input=R1M1FS6.dcm --output=R1M1FS6.txt 

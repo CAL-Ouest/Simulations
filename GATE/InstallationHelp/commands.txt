@@ -1,0 +1,10 @@
+hetaAirCorrection_2"
+
+export PATH="$PATH:~/Documents/EnergySpread"
+
+/vis/viewer/set/viewpointThetaPhi 90. 0.
+
+https://github.com/OpenGATE/Gate.git
+
+vv data/patient-2mm.mhd --fusion output/3d-pat-Edep.mhdcal
+cal

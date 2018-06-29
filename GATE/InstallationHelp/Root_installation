@@ -1,0 +1,13 @@
+https://root.cern.ch/root/html534/guides/users-guide/InstallandBuild.html
+
+
+With pyroot
+./configure [--with-python-incdir=/usr/include/python2.7][--with-python-libdir=/usr/lib/x86_64-linux-gnu] --prefix=/usr/local
+
+
+
+Directory: 
+/usr/local/bin/root
+
+Executable
+/usr/local/bin/root/bin/thisroot.sh

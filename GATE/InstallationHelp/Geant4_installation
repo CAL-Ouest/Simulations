@@ -1,0 +1,20 @@
+follow Geant4 installation guide online
+
+my installation command with options included
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local/bin/geant4.10.3-install -DGEANT4_USE_OPENGL_X11 -DGEANT4_INSTALL_DATA=ON /usr/local/bin/geant4.10.03
+
+(pass options for X11 and automatic DATA download)
+
+Executable
+/usr/local/bin/geant4.10.3-install/bin/geant4.sh
+
+
+
+execute example on desktop (youtube Video: example B3 Geant4)
+source /usr/local/bin/geant4.10.3-install/bin/geant4.sh
+cmake -DGEANT4_DIR=/usr/local/bin/geant4.10.3-install /home/cal/Desktop/B3
+make -j4
+./exampleB1
+/run/beamOn 100
+
+-->makes two examples as compared to the video, tested example 3a and works fine

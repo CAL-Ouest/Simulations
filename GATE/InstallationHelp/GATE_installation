@@ -1,0 +1,64 @@
+**ECAT library**:
+gunzip ecat.tar.gz
+tar -xvf ecat.tar
+sudo mv /home/cal/Downloads/ECAT /usr/local/bin
+
+- cancelled
+
+************************************************************************************
+
+**LMF library**:
+- cancelled 
+
+************************************************************************************
+
+**InsightToolkit**:
+install using cmake
+cmake -DCMAKE_INSTALL_PREFIX=/usr/local/bin/ITK-install /usr/local/bin/InsightToolkit-4.12.2
+make -j4
+make install
+
+*************************************************************************************
+
+**Package XML**:
+libxml2-dev
+
+*************************************************************************************
+
+**GATE***:
+follow http://wiki.opengatecollaboration.org/index.php/Compilation_Instructions_V8.0
+
+BUILD_TESTING                     ON
+CMAKE_BUILD_TYPE		  Release
+CMAKE_INSTALL_PREFIX		  /usr/local/bin/gate_v8.0-install
+CMAKE_BACKWARDS_COMPATIBILITY 	  2.4
+EXECUTABLE_OUTPUT_PATH		  
+GATE_USE_GEANT4_UIVIS 		  ON
+GATE_DOWNLOAD_BENCHMARKS_DATA     ON
+GATE_USE_ECAT7                    OFF later turning ON
+GATE_USE_GPU                      OFF
+GATE_USE_ITK                      ON
+GATE_USE_LMF                      OFF later turning ON
+GATE_USE_OPTICAL                  ON
+GATE_USE_RTK                      OFF
+GATE_USE_STDC11                   ON
+GATE_USE_DAVIS                    OFF
+GEANT4_USE_SYSTEM_CLHEP           OFF
+Geant4_DIR 			  /usr/local/bin/geant4.10.3-install/lib/Geant4-10.3.2
+ITK_DIR				  /usr/local/bin/ITK-install/lib/cmake/ITK-4.12
+
+!! DIRECTORY where rootcint is under /usr/bin
+
+Set evironment after installation:
+export PATH=$PATH:/usr/local/bin/gate_v8.0-install/bin
+
+To start GATE make on bash-file:
+startGATE.bashrc
+with content:
+source /usr/local/bin/geant4.10.3-install/bin/geant4.sh
+export PATH=$PATH:/usr/local/bin/gate_v8.0-install/bin
+
+
+Start GATE with:
+source startGATE.bashrc
+Gate
