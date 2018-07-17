@@ -1,0 +1,10 @@
+manipDCM.py is a python Script that creates DICOM-files that can be read with OmniPro.
+As input you can take a simple ascii file, that is for example created with a Simulation.
+
+Copy the script in your simulation folder and start with
+
+python manipDCM.py
+
+In the program you can navigate to the folder containing your simulation output files and then choose a file containing the image values.
+
+Should your ascii file contain a different number of header lines to ignore, you can change this in the np.loadtxt command.

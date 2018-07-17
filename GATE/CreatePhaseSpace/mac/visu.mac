@@ -1,0 +1,28 @@
+
+#=====================================================
+# VISUALISATION 
+
+/vis/open                             OGLI
+#/vis/open                            OGLS
+/vis/drawVolume
+/vis/viewer/set/viewpointThetaPhi 80 40
+/vis/viewer/zoom 0.5
+/vis/viewer/flush
+/vis/scene/add/axes		      0 0 0 0.5 m
+/tracking/storeTrajectory             1
+/vis/scene/add/trajectories 		smooth
+#/vis/modeling/trajectories/create/drawByParticleID
+#/vis/modeling/trajectories/drawByParticleID-0/set gamma yellow
+#/vis/modeling/trajectories/drawByParticleID-0/set proton red
+#/vis/modeling/trajectories/drawByParticleID-0/set neutron green
+#/vis/modeling/trajectories/drawByParticleID-0/set e- red
+#Filter for better view
+/vis/filtering/trajectories/create/particleFilter
+/vis/filtering/trajectories/particleFilter-0/add proton
+#/vis/filtering/trajectories/particleFilter-0/invert true
+/vis/scene/endOfEventAction           accumulate
+/vis/scene/add/hits
+/vis/viewer/set/autoRefresh true
+#/vis/viewer/set/style surface
+/gate/world/vis/setVisible false
+

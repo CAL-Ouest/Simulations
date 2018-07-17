@@ -1,0 +1,142 @@
+#=====================================================
+# VERBOSE and VISUALISATION
+#=====================================================
+
+/control/execute mac/verbose.mac
+#/control/execute mac/visu.mac
+
+#=====================================================
+# GEOMETRY
+#=====================================================
+
+/gate/geometry/setMaterialDatabase data/GateMaterials.db
+
+# World
+/gate/world/geometry/setXLength 5 m
+/gate/world/geometry/setYLength 5 m
+/gate/world/geometry/setZLength 5 m
+/gate/world/setMaterial G4_AIR
+
+/gate/world/daughters/name             mainBox
+/gate/world/daughters/insert           box
+/gate/mainBox/geometry/setXLength 30 cm
+/gate/mainBox/geometry/setZLength 30 cm
+/gate/mainBox/geometry/setYLength 30 cm
+/gate/mainBox/placement/setTranslation 0.0 0.0 0.0 cm
+/gate/mainBox/setMaterial G4_WATER
+/gate/mainBox/vis/setVisible 1
+/gate/mainBox/vis/setColor yellow
+
+#=====================================================
+# PHYSICS
+#=====================================================
+
+/gate/physics/addPhysicsList QBBC_EMY
+# Display
+/gate/physics/processList Enabled
+/gate/physics/displayCuts
+# Ionization potential of water
+/gate/geometry/setIonisationPotential Water 78 eV
+/gate/geometry/setIonisationPotential G4_WATER 78 eV
+
+/gate/physics/Gamma/SetCutInRegion      world 1 m
+/gate/physics/Electron/SetCutInRegion   world 1 m
+/gate/physics/Positron/SetCutInRegion   world 1 m
+
+/gate/physics/Gamma/SetCutInRegion      mainBox 0.1 mm
+/gate/physics/Electron/SetCutInRegion   mainBox 0.1 mm
+/gate/physics/Positron/SetCutInRegion   mainBox 0.1 mm
+
+/gate/physics/SetMaxStepSizeInRegion mainBox 1 mm
+/gate/physics/ActivateStepLimiter proton
+/gate/physics/ActivateStepLimiter deuteron
+/gate/physics/ActivateStepLimiter triton
+/gate/physics/ActivateStepLimiter alpha
+/gate/physics/ActivateStepLimiter GenericIon
+
+#=====================================================
+# DETECTORS
+#=====================================================
+
+/gate/actor/addActor               SimulationStatisticActor stat
+/gate/actor/stat/save              output/{En}/stat-proton.txt
+/gate/actor/stat/saveEveryNSeconds 100
+
+#/gate/actor/addActor PhaseSpaceActor PHS_GLOBALBOX
+#/gate/actor/PHS_GLOBALBOX/attachTo mainBox
+#/gate/actor/PHS_GLOBALBOX/useVolumeFrame
+#/gate/actor/PHS_GLOBALBOX/save output/{En}/GlobalBox.root
+
+# Actor for 3D dose 
+#/gate/actor/addActor                     DoseActor  dose3d
+#/gate/actor/dose3d/save                  output/{En}/2d-dose.mhd
+#/gate/actor/dose3d/attachTo    	         mainBox
+#/gate/actor/dose3d/stepHitType           random
+#/gate/actor/dose3d/setResolution         2.5 2.5 400
+#/gate/actor/dose3d/setPosition           0 0 0 cm
+#/gate/actor/dose3d/saveEveryNSeconds   60
+#/gate/actor/dose3d/enableEdep            false
+#/gate/actor/dose3d/enableUncertaintyEdep false
+#/gate/actor/dose3d/enableDose            true
+#/gate/actor/dose3d/enableUncertaintyDose false
+#/gate/actor/dose3d/enableNumberOfHits    false
+
+# Actor for depth dose
+/gate/actor/addActor                          DoseActor  depthdose
+/gate/actor/depthdose/save                  output/{En}/depth.dat
+/gate/actor/depthdose/attachTo    	      mainBox
+/gate/actor/depthdose/stepHitType           random
+/gate/actor/depthdose/setPosition           0 0 0 cm
+/gate/actor/depthdose/setResolution         1 1 4000
+/gate/actor/depthdose/setSize               2.5 2.5 40 cm
+/gate/actor/depthdose/saveEveryNSeconds    60
+/gate/actor/depthdose/enableEdep            true
+/gate/actor/depthdose/enableUncertaintyEdep true
+/gate/actor/depthdose/enableDose            true
+/gate/actor/depthdose/enableUncertaintyDose true
+/gate/actor/depthdose/enableNumberOfHits    false
+
+# Actor for depth dose
+/gate/actor/addActor                          DoseActor  depthdose1
+/gate/actor/depthdose1/save                  output/{En}/depthcyl.dat
+/gate/actor/depthdose1/attachTo    	     cylinder
+/gate/actor/depthdose1/stepHitType           random
+/gate/actor/depthdose1/setPosition           0 0 0 cm
+/gate/actor/depthdose1/setResolution         1 1 4000
+/gate/actor/depthdose1/setSize               2.5 2.5 40 cm
+/gate/actor/depthdose1/saveEveryNSeconds    60
+/gate/actor/depthdose1/enableEdep            true
+/gate/actor/depthdose1/enableUncertaintyEdep true
+/gate/actor/depthdose1/enableDose            true
+/gate/actor/depthdose1/enableUncertaintyDose true
+/gate/actor/depthdose1/enableNumberOfHits    false
+
+#=====================================================
+# INITIALISATION
+#=====================================================
+
+/gate/run/initialize
+
+#=====================================================
+# BEAMS
+#=====================================================
+
+/gate/source/addSource PBS TPSPencilBeam
+/gate/source/PBS/setTestFlag true
+/gate/source/PBS/setParticleType proton
+/gate/source/PBS/setPlan data/plan/RP100.txt
+#/gate/source/PBS/setSpotIntensityAsNbIons true
+#/gate/source/PBS/setNotAllowedFieldID 1
+/gate/source/PBS/setFlatGenerationFlag false
+/gate/source/PBS/setSortedSpotGenerationFlag false
+/gate/source/PBS/setSigmaEnergyInMeVFlag false
+/gate/source/PBS/setSourceDescriptionFile data/source/Source-Properties.txt
+
+#=====================================================
+# START BEAMS
+#=====================================================
+
+/gate/random/setEngineName MersenneTwister
+/gate/random/setEngineSeed auto
+/gate/application/setTotalNumberOfPrimaries 10000000
+/gate/application/start

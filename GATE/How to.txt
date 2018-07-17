@@ -8,3 +8,26 @@ https://www.creatis.insa-lyon.fr/rio/vv-clitk#clitkDicomInfo
 
 Example:
 clitkDicomRTPlan2Gate --input=R1M1FS6.dcm --output=R1M1FS6.txt 
+
+
+*************************************************************
+*** C O N V E R T   DICOM SLICES TO VOLUME ***
+*************************************************************
+
+Convert the series of DICOMs to a .mhd file 
+Make a list with the DICOM filenames to use in the itk command
+command line: ls –1v > filename.txt  
+
+-> obtain all filenames as strings
+
+in the file: replace newline by simple space
+(in vi :  :%s/\n/ /)
+
+Make a DICOM volume:
+command line: clitkDicom2Image --output=Series.mhd FILE1 FILE2 FILE3 … 
+Replace "FILE1 FILE2 FILE..."
+
+Open .mhd file and change the corresponding line to
+Set TransformMatrix = 1 0 0 0 1 0 0 0 1 
+
+vv series.mhd, Dans Tools / Crop, select the ROI of interest and crop it.

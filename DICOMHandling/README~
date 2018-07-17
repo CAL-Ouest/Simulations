@@ -1,0 +1,2 @@
+manipDCM.py is a python Script that creates DICOM-files that can be read with OmniPro.
+As input you can take a simple ascii file, that is for example created with a Simulation.
