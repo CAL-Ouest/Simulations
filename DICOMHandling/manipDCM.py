@@ -130,10 +130,10 @@ print 'To print ascii data uncomment line in python file.'
 
 ConstPixelDims = (int(ds.Rows), int(ds.Columns))
 ConstPixelSpacing = (float(ds.PixelSpacing[0]), float(ds.PixelSpacing[1]))
-x = np.arange(-150.0,(ConstPixelDims[0]+1)*ConstPixelSpacing[0]/2, ConstPixelSpacing[0])
-y = np.arange(-150.0,(ConstPixelDims[1]+1)*ConstPixelSpacing[1]/2, ConstPixelSpacing[1])
+#x = np.arange(posX,(ConstPixelDims[0]+1)*ConstPixelSpacing[0]/2, ConstPixelSpacing[0])
+#y = np.arange(posY,(ConstPixelDims[1]+1)*ConstPixelSpacing[1]/2, ConstPixelSpacing[1])
 # The array is sized based on 'ConstPixelDims'
-ArrayDicom = np.zeros(ConstPixelDims, dtype="uint16")
+#ArrayDicom = np.zeros(ConstPixelDims, dtype="uint16")
 # store the raw image data
 ArrayDicom = z.astype(np.uint16) 
 
@@ -145,8 +145,19 @@ ArrayDicom = z.astype(np.uint16)
 ##pyplot.pcolormesh(x, y, np.flipud(ArrayDicom[:, :]))
 #pyplot.pcolormesh(ArrayDicom)
 #pyplot.show()
-
+print ''
+print 'If you want to rotate the DICOM image, uncomment at this point in the python file'
+print ''
+print 'Pixel array dimensions: ', ArrayDicom.shape
+ArrayDicom=np.swapaxes(ArrayDicom,0,1)
+ArrayDicom=ArrayDicom.copy(order='C')
+print 'After rotation'
+print 'Pixel array dimensions: ', ArrayDicom.shape
 ds.PixelData = ArrayDicom
+tmp=ds.Rows
+ds.Rows=ds.Columns
+ds.Columns=tmp
+
 #print 'Pixel array data type: ', ds.pixel_array.dtype
 
 # To print the ascii data copied into the DICOM-file
