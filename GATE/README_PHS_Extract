@@ -1,0 +1,9 @@
+python Script to export data in phase space into (nicer) graphics with matplotlib
+
+Takes as argument the filename of the root phase space
+Saves the files in a folder "PhaseSpace"
+(!make sure to create a folder named "PhaseSpace"!)
+
+Example:
+python PHS_AllExtract.py PHS_All.root
+
