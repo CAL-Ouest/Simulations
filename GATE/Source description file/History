@@ -1,9 +1,0 @@
-0130: Before including theta air correction for 1004 mm
-0212: First try including the WET at nozzle entrance
-0213: negative WET after talking to IBA
-0214: adjusted after one iteration
-0215: With polynomial for energy spread
-0321: after one iteration 
-0404: minus the iteration to do new tests on physics lists
-0904: with iteration and ionization potential from ICRU90 (to date the best)
-0517: Changed x and y polynomials after gamma index

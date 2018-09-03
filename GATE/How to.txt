@@ -16,7 +16,7 @@ clitkDicomRTPlan2Gate --input=R1M1FS6.dcm --output=R1M1FS6.txt
 
 Convert the series of DICOMs to a .mhd file 
 Make a list with the DICOM filenames to use in the itk command
-command line: ls –1v > filename.txt  
+command line: ls -1v > filename.txt  
 
 -> obtain all filenames as strings
 
@@ -30,4 +30,20 @@ Replace "FILE1 FILE2 FILE..."
 Open .mhd file and change the corresponding line to
 Set TransformMatrix = 1 0 0 0 1 0 0 0 1 
 
-vv series.mhd, Dans Tools / Crop, select the ROI of interest and crop it.
+vv series.mhd
+Dans Tools / Crop, select the ROI of interest and crop it.
+
+*************************************************************
+*** Positioning phantom in mac ***
+*************************************************************
+
+Open
+vv Cropped-series.mhd 
+
+and look at the size of the introduced CT image to translate the voxelized phantom.
+If geometries in GATE overlap, the actors can not record dose values.
+(In future versions this will be solved.)
+
+
+
+
